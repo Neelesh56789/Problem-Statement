@@ -1,0 +1,397 @@
+
+<html>
+    <head>
+       <style>
+        li {
+  padding-bottom: 8px !important;
+}
+:root {
+    --lightneutral-100: rgba(30, 33, 36, 1);
+    --lightneutral-700: rgba(120, 122, 124, 1);
+    --textlight-400: rgba(54, 57, 62, 1);
+    --lightgreen600-base: rgba(101, 177, 104, 1);
+    --lightneutral-1200: rgba(232, 233, 233, 1);
+    --lightneutral1300-base: rgba(255, 255, 255, 1);
+    --lightprimary600-base: rgba(246, 108, 59, 1);
+    --lightprimary-500: rgba(195, 92, 57, 1);
+    --common-heading-h5-font-family: "Mulish-Bold", Helvetica;
+    --common-heading-h5-font-weight: 700;
+    --common-heading-h5-font-size: 18px;
+    --common-heading-h5-letter-spacing: 0px;
+    --common-heading-h5-line-height: 24px;
+    --common-heading-h5-font-style: normal;
+    --body-large-font-family: "Mulish-Regular", Helvetica;
+    --body-large-font-weight: 400;
+    --body-large-font-size: 16px;
+    --body-large-letter-spacing: 0px;
+    --body-large-line-height: 24px;
+    --body-large-font-style: normal;
+    --subtitle-small-font-family: "Mulish-Bold", Helvetica;
+    --subtitle-small-font-weight: 700;
+    --subtitle-small-font-size: 14px;
+    --subtitle-small-letter-spacing: 0px;
+    --subtitle-small-line-height: 20px;
+    --subtitle-small-font-style: normal;
+    --subtitle-large-font-family: "Mulish-Bold", Helvetica;
+    --subtitle-large-font-weight: 700;
+    --subtitle-large-font-size: 16px;
+    --subtitle-large-letter-spacing: 0px;
+    --subtitle-large-line-height: 24px;
+    --subtitle-large-font-style: normal;
+    --CTA-small-underline-font-family: "Mulish-Bold", Helvetica;
+    --CTA-small-underline-font-weight: 700;
+    --CTA-small-underline-font-size: 12px;
+    --CTA-small-underline-letter-spacing: 0px;
+    --CTA-small-underline-line-height: 16px;
+    --CTA-small-underline-font-style: normal;
+    --lighter-hover-do-not-use: -1px 10px 24px 0px rgba(240, 240, 240, 1);
+}
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+}
+.frame .contest-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 32px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--lightneutral1300-base);
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: var(--lightneutral-1200);
+    box-shadow: var(--lighter-hover-do-not-use);
+}
+.frame .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.frame .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--common-heading-h5-font-family);
+    font-weight: var(--common-heading-h5-font-weight);
+    color: var(--lightneutral-100);
+    font-size: var(--common-heading-h5-font-size);
+    letter-spacing: var(--common-heading-h5-letter-spacing);
+    line-height: var(--common-heading-h5-line-height);
+    font-style: var(--common-heading-h5-font-style);
+}
+.frame .p {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body-large-font-family);
+    font-weight: var(--body-large-font-weight);
+    color: var(--lightneutral-700);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    line-height: var(--body-large-line-height);
+    font-style: var(--body-large-font-style);
+}
+.frame .div-2 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 143px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--lightneutral-1200);
+}
+.frame .navbar {
+    position: absolute;
+    width: 546px;
+    height: 85px;
+    top: 29px;
+    left: 17px;
+}
+.frame .div-3 {
+    display: flex;
+    width: 541px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    top: 45px;
+    left: 3px;
+}
+.frame .download-scaffold {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--textlight-400);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--textlight-400);
+    font-size: var(--subtitle-small-font-size);
+    text-align: center;
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .upload-the-zip-file {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--textlight-400);
+    font-size: var(--subtitle-small-font-size);
+    text-align: right;
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .overlap-group-wrapper {
+    position: absolute;
+    width: 541px;
+    height: 10px;
+    top: 27px;
+    left: 3px;
+}
+.frame .overlap-group {
+    position: relative;
+    height: 10px;
+}
+.frame .rectangle {
+    position: absolute;
+    width: 539px;
+    height: 4px;
+    top: 5px;
+    left: 2px;
+    background-color: var(--lightneutral-100);
+}
+.frame .div-4 {
+    position: absolute;
+    width: 541px;
+    height: 10px;
+    top: 0;
+    left: 0;
+}
+.frame .ellipse {
+    left: -3px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .ellipse-2 {
+    left: 181px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .ellipse-3 {
+    left: 342px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .ellipse-4 {
+    left: 523px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .text-wrapper-3 {
+    left: 3px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-4 {
+    left: 175px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-5 {
+    left: 335px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-6 {
+    left: 500px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .div-wrapper {
+    position: absolute;
+    width: 129px;
+    height: 25px;
+    top: -10px;
+    left: 13px;
+    background-color: #ffffff;
+}
+.frame .text-wrapper-7 {
+    position: absolute;
+    top: -3px;
+    left: 8px;
+    font-family: var(--subtitle-large-font-family);
+    font-weight: var(--subtitle-large-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-large-font-size);
+    letter-spacing: var(--subtitle-large-letter-spacing);
+    line-height: var(--subtitle-large-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-large-font-style);
+}
+.frame .div-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.frame .text-wrapper-8 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--body-large-font-family);
+    font-weight: var(--body-large-font-weight);
+    color: var(--lightneutral-700);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    line-height: var(--body-large-line-height);
+    font-style: var(--body-large-font-style);
+}
+
+</style>
+    </head>
+    <body>
+        <div class="frame">
+                <div class="div">
+                    <div class="text-wrapper" style = "font-size: 150%;">Rock Paper Scissor - Part 1</div><br>
+                    <p class = "p" style = "font-size: 100%; font-weight: bolder;">Engage in the timeless game of Rock, Paper, Scissors, where strategy meets luck in a digital showdown against the computer!</p>
+                    <p class="p">
+                        Welcome, developers! Your task is to create the classic game of Rock, Paper, Scissors. This project aims to transform the conventional into an engaging digital experience, challenging players to outwit an unpredictable computer opponent while maintaining the charm and simplicity of the original game.
+                    </p><br>
+                    <div class="text-wrapper" style = "font-size: 130%;">Task for students</div>
+                    <br>
+                    <ul>
+                        <li class = "text-wrapper" style="margin-left: 1.5rem; font-weight: bolder; font-size: larger;">Must to have
+                            <ul style = "margin-top: 0.5rem;">
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">The id of the rock button should be "rock".</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">The id of the paper button should be "paper".</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">The id of the scissor button should be "scissors".</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">The id, of the place where you declare user score, should be "user-score".</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">The id, of the place where you declare computer score, should be "computer-score".</li>
+                            </ul>
+                        </li>
+                        <li class = "text-wrapper"  style="margin-left: 1.5rem; font-weight: bolder; font-size: larger;">Functionality tested
+                            <ul style = "margin-top: 0.5rem;">
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">Computer function should return a valid choice.</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">Play function updates score and return the correct result when user wins.</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">Play function updates score and return the correct result when user looses.</li>
+                                <li class = "p" style = "margin-left: 1rem; list-style-type: disc;">Play function does not update score and return the result when game is tied.</li>
+                            </ul>
+                        </li>
+                    </ul>   
+                    <div class = "text-wrapper">UI reference & demo</div>
+                        <ul>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Use the given provided code and try to mirror the UI.
+                            </li>
+                            <br>
+                            <video style="width: 80%; margin: 0 auto; display: flex;" controls>
+                                <source src="https://files.codingninjas.in/rps-1-33699.mp4" type="video/mp4">
+                            </video>
+                        </ul>
+                    <br>
+                    <div class = "text-wrapper">Evaluation</div>
+                        <ul>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">After submission, your solution will be evaluated automatically based on the tasks defined above. </li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Upon successful completion of all the tasks/requirements, you will get a full score, and there will not be any partial scoring.
+                            </li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">You can work on your failed test cases & resubmit your solution.
+                            </li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Your problem will get evaluated instantly.</li>
+                        </ul>
+                    <br>
+                    <div class = "text-wrapper">Do’s & don’t</div>
+                        <ul>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Use the given code structure in editor and do not make any changes.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Do not modify existing classes or tags.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Focus on correct HTML structure and class names.</li>
+                        </ul>
+                    <br>
+                    <div class = "text-wrapper">Query & feedback</div>
+                        <ul>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">In case of any query/feedback on this project, please fill this <a href = "https://forms.gle/x9JtyFFSsxP8FsdK6" target="_blank" style="color: #5780E9; text-decoration: underline;" onmouseover="this.style.color='#425996';" onmouseout="this.style.color='#5780E9';">form</a> & we will soon get in touch with you to resolve.</li>
+                        </ul>
+                    <br>
+                    <p class = "p" style = "font-size: 100%; font-weight: bolder;">Best of luck, developers! We are eager to see your rock paper scissors game!</p>

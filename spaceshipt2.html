@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="font-weight: bolder; text-decoration: underline; text-align: center;">Spaceship Invasion</h2><br>
+    <p style="font-size: 20px; font-weight: 700; width: 100%; margin:0 auto ;text-align: center;">
+        Create 'Spaceship Invasion,' a thrilling web game. Protect your territory by shooting invaders and earning points. Aim for the highest score in this exciting challenge!
+        </p>
+        <br>
+        <p style="font-size: 16px;">You are a student developer tasked with creating an engaging game called "Spaceship Invasion" using the given HTML5 Canvas and JavaScript (Scaffold). Spaceship Invasion is an interactive game in which the player has to fire the bullet before any invader reaches to the ground. The game should feature player controls, shooting mechanics, invaders movements, scoring, and a time limit as mentioned in the Game Mechanics below.
+            </p><br>
+            <div style="font-size:1.38rem;font-weight:bold;">General Requirements</div>
+        <p>Develop a “Spaceship Invasion” web game and protect your territory.
+            Your game needs to follow the guidelines below and align with the provided sample video for the best UI resemblance.
+            </p>
+            <div style="font-size:1.4rem;font-weight:bold;">Tasks for Students:</div><br>
+            <div style="font-size:1.3rem; text-decoration: underline"> Core Requirements</div>
+            <ul>
+             <li style="list-style-type: disc; font-size: 16px;font-weight:bold;">Setting Up</li>
+            <li style="list-style-type: circle; margin-left: 3rem;">Start with a basic index.html structure.</li>
+            <li style="list-style-type: circle; margin-left: 3rem;">Build a start button that is used to start the game.
+         </li>
+            <li style="list-style-type: circle; margin-left: 3rem;">There should be multiple invaders, but should be one spaceship gun.</li>
+             <li style="list-style-type: disc; font-size: 16px;font-weight:bold;">Initial Display</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Build a canvas for playing the game. The game should run inside the canvas.
+             </li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Design the movement of the player and enemy. Fix the enemies movement and give the control of the player to the user.
+             </li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Ensure a smooth and responsive gaming experience across various devices and screen sizes.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Incorporate audio effects to enhance the overall gaming atmosphere.</li>
+             <li style="list-style-type: disc; font-size: 16px;font-weight:bold;">Game Mechanics</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Start the game when the 'Start Game' button is clicked.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Allow the player to move and shoot using keyboard controls.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Player can move to left or right using ‘left’ and ‘right’ arrow keys on the keyboard.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Player can fire the bullet using the ‘space’ key on the keyboard.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">There should be a bullet sound when a bullet collides with an invader.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">There should be a point losing sound when any invader reaches to the ground and the spaceship gun is not able to destroy it.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Implement enemy AI to create an invasion of enemies.</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Scoring System: There should be a scoring system and it will start updating fast as a player gets the power-ups.
+                <li style="list-style-type: square; margin-left: 3rem;">Update the player's score by 10 whenever any bullet collides with the invader.</li>
+                <li style="list-style-type: square; margin-left: 3rem;">Decrease the player’s score by 10 whenever any invader reaches to the ground.</li>
+                <li style="list-style-type: square; margin-left: 3rem;">There should be a highest score functionality in a single session of the game.
+                    <li style="list-style-type: disc; margin-left: 3rem;">When a bullet collides with the invader and the score is equal to the highest score, then the Highest score gets added by 10 additional points.
+                    </li>
+                    <li style="list-style-type: disc; margin-left: 3rem;">When bullet collides with the invader and score is less than highest score, then the Highest score will remain the same.</li>
+                </li>
+                <li style="list-style-type: square; margin-left: 3rem;">Whenever the timer ends or the score reaches zero, the game should be ended.</li>
+                <li style="list-style-type: square; margin-left: 3rem;">At the end of the game, you have to print the highest score attained.</li>
+            </li>
+             <li style="list-style-type: circle; margin-left: 3rem;">Add the timer: Incorporate a timer to limit the game's duration.</li> 
+             <li style="list-style-type: disc; font-size: 16px;font-weight:bold;">Game Outcomes</li>
+             <li style="list-style-type: circle; margin-left: 3rem;">There will be no losing or winning conditions. Your aim should be to get the highest possible score.</li></ul><br>
+            <div style=" font-size: 18px; text-decoration: underline; text-align: left;">Please Refer the following Document: <a
+                href="https://ninjasfiles.s3.amazonaws.com/Code%20Structure%20Guidelines%20%28Bounce%20World%29-3652.pdf"
+                style="color: rgb(79, 136, 228); text-decoration: underline; font-weight: bold;"
+                onmouseover="this.style.color='red';" onmouseout="this.style.color='rgb(79, 136, 228)';">Code Structure
+                Guidelines (Must Follow)</a></div><br>
+            <div style="font-size:1.4rem;font-weight:bold;">Bonus Features</div>
+            <ul>
+                <li>Add creative animations to depict different states of the player character, such as running, jumping, and collision reactions.</li>
+                <li>Implement transition animations for changing levels and during the end game scenario to enhance the visual appeal.</li>
+                <li>Create a patrolling enemy with AI behavior, changing direction upon hitting the canvas edges to add unpredictability in the enemy movement.</li>
+            </ul><br>
+            <div style="font-size:1.4rem;font-weight:bold;">UI Reference & Demo</div>
+            <ul>
+                <li>Use the given Scaffold as a starting point to build the game's interface, aiming to enhance the initial structure with your unique and creative additions.</li>
+                <li>Watch the demo video which will help in designing the project in recommended way - <a href="https://files.codingninjas.in/bounce-world-30356.mp4" style="color: rgb(79, 136, 228); text-decoration: underline; font-weight: bold;" onmouseover="this.style.color='red';" 
+                onmouseout="this.style.color='rgb(79, 136, 228)';"> Demo Video </a></li>
+            <li>Refer to various design inspirations online to bring a fresh and modern look to the application.</li></ul><br>
+            <div style="font-size:1.4rem;font-weight:bold;">Note:</div>
+    <ul>
+        <li style="list-style-type: disc;">Regularly test your app to ensure all functionalities are
+            working seamlessly and to maintain alignment with the core requirements.
+        </li>
+        <li style="list-style-type: disc;">Leverage the canvas element to its fullest to create a visually rich gaming environment.
+        </li>
+    </ul>
+            <br>
+            <div style="font-size:1.4rem;font-weight:bold;">Evaluation:</div>
+    <ul>
+        <li style="list-style-type: disc;">After submission, your project will be evaluated
+            automatically based on tasks defined above.</li>
+        <li style="list-style-type: disc;">Upon successful completion of all the tasks/requirements,
+            you will get a full score, otherwise you will get a partial score based on the tasks completed successfully.
+        </li>
+        <li style="list-style-type: disc;">You can work on your failed test cases & resubmit the
+            project.</li>
+        <li style="list-style-type: disc;">Your project evaluation may take a few minutes to get
+            evaluated after submission.</li>
+        <li style="list-style-type: disc;">After completing certain projects, you will be rewarded
+            with badges for defined competencies. For more information, <a
+                href="https://ninjasfiles.s3.amazonaws.com/Code%20Structure%20Guidelines%20%28Must%20Follow%29%28chat-app%29-3619.pdf"
+                style="color: rgb(79, 136, 228); text-decoration: underline; font-weight: bold;"
+                onmouseover="this.style.color='red';" onmouseout="this.style.color='rgb(79, 136, 228)';">check here
+                -</a></li>
+    </ul><br>
+    <div style="font-size:1.4rem;font-weight:bold;">Do’s and Don’t</div>
+    <p>You must start the project by first downloading the scaffold file attached to this project & make changes in
+        those files only. You should not start creating your own files.</p>
+    <div style="font-size:1.4rem;font-weight:bold;">Query & Feedback</div>
+    <p></p>In case of any query/feedback on this project, please fill this <a
+        href="https://ninjasfiles.s3.amazonaws.com/Code%20Structure%20Guidelines%20%28Must%20Follow%29%28chat-app%29-3619.pdf"
+        style="color: rgb(79, 136, 228); text-decoration: underline; font-weight: bold;"
+        onmouseover="this.style.color='red';" onmouseout="this.style.color='rgb(79, 136, 228)';">form</a> & we will soon
+    get in touch with you to resolve.
+
+    <br><br>
+    <div style="display: flex; flex-direction: column; width: 80%; height: auto; margin:0 auto ;">
+        <img src="https://files.codingninjas.in/step-by-step-laptop-31857.png" class="web-image"
+            style="width: 70%; margin:0 auto ;">
+        <img src="https://files.codingninjas.in/step-by-step-mobille-31858.png" class="mobile-image"
+            style="width: 70%; margin:0 auto ;" />
+    </div>
+    <br>
+    Best of luck, developers! We are eager to see your dynamic Chat-App integrations!</p>
+            
+</body>
+</html> 

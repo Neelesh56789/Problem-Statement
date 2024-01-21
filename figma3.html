@@ -1,0 +1,436 @@
+
+<html>
+    <head>
+       <style>
+:root {
+    --lightneutral-100: rgba(30, 33, 36, 1);
+    --lightneutral-700: rgba(120, 122, 124, 1);
+    --textlight-400: rgba(54, 57, 62, 1);
+    --lightgreen600-base: rgba(101, 177, 104, 1);
+    --lightneutral-1200: rgba(232, 233, 233, 1);
+    --lightneutral1300-base: rgba(255, 255, 255, 1);
+    --lightprimary600-base: rgba(246, 108, 59, 1);
+    --lightprimary-500: rgba(195, 92, 57, 1);
+    --common-heading-h5-font-family: "Mulish-Bold", Helvetica;
+    --common-heading-h5-font-weight: 700;
+    --common-heading-h5-font-size: 18px;
+    --common-heading-h5-letter-spacing: 0px;
+    --common-heading-h5-line-height: 24px;
+    --common-heading-h5-font-style: normal;
+    --body-large-font-family: "Mulish-Regular", Helvetica;
+    --body-large-font-weight: 400;
+    --body-large-font-size: 16px;
+    --body-large-letter-spacing: 0px;
+    --body-large-line-height: 24px;
+    --body-large-font-style: normal;
+    --subtitle-small-font-family: "Mulish-Bold", Helvetica;
+    --subtitle-small-font-weight: 700;
+    --subtitle-small-font-size: 14px;
+    --subtitle-small-letter-spacing: 0px;
+    --subtitle-small-line-height: 20px;
+    --subtitle-small-font-style: normal;
+    --subtitle-large-font-family: "Mulish-Bold", Helvetica;
+    --subtitle-large-font-weight: 700;
+    --subtitle-large-font-size: 16px;
+    --subtitle-large-letter-spacing: 0px;
+    --subtitle-large-line-height: 24px;
+    --subtitle-large-font-style: normal;
+    --CTA-small-underline-font-family: "Mulish-Bold", Helvetica;
+    --CTA-small-underline-font-weight: 700;
+    --CTA-small-underline-font-size: 12px;
+    --CTA-small-underline-letter-spacing: 0px;
+    --CTA-small-underline-line-height: 16px;
+    --CTA-small-underline-font-style: normal;
+    --lighter-hover-do-not-use: -1px 10px 24px 0px rgba(240, 240, 240, 1);
+}
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    position: relative;
+}
+.frame .contest-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 32px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--lightneutral1300-base);
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: var(--lightneutral-1200);
+    box-shadow: var(--lighter-hover-do-not-use);
+}
+.frame .div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.frame .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--common-heading-h5-font-family);
+    font-weight: var(--common-heading-h5-font-weight);
+    color: var(--lightneutral-100);
+    font-size: var(--common-heading-h5-font-size);
+    letter-spacing: var(--common-heading-h5-letter-spacing);
+    line-height: var(--common-heading-h5-line-height);
+    font-style: var(--common-heading-h5-font-style);
+}
+.frame .p {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body-large-font-family);
+    font-weight: var(--body-large-font-weight);
+    color: var(--lightneutral-700);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    line-height: var(--body-large-line-height);
+    font-style: var(--body-large-font-style);
+}
+.frame .div-2 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 143px;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--lightneutral-1200);
+}
+.frame .navbar {
+    position: absolute;
+    width: 546px;
+    height: 85px;
+    top: 29px;
+    left: 17px;
+}
+.frame .div-3 {
+    display: flex;
+    width: 541px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    top: 45px;
+    left: 3px;
+}
+.frame .download-scaffold {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--textlight-400);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--textlight-400);
+    font-size: var(--subtitle-small-font-size);
+    text-align: center;
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .upload-the-zip-file {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--textlight-400);
+    font-size: var(--subtitle-small-font-size);
+    text-align: right;
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .overlap-group-wrapper {
+    position: absolute;
+    width: 541px;
+    height: 10px;
+    top: 27px;
+    left: 3px;
+}
+.frame .overlap-group {
+    position: relative;
+    height: 10px;
+}
+.frame .rectangle {
+    position: absolute;
+    width: 539px;
+    height: 4px;
+    top: 5px;
+    left: 2px;
+    background-color: var(--lightneutral-100);
+}
+.frame .div-4 {
+    position: absolute;
+    width: 541px;
+    height: 10px;
+    top: 0;
+    left: 0;
+}
+.frame .ellipse {
+    left: -3px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .ellipse-2 {
+    left: 181px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .ellipse-3 {
+    left: 342px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .ellipse-4 {
+    left: 523px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    background-color: var(--lightgreen600-base);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #ffffff;
+}
+.frame .text-wrapper-3 {
+    left: 3px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-4 {
+    left: 175px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-5 {
+    left: 335px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .text-wrapper-6 {
+    left: 500px;
+    position: absolute;
+    top: -1px;
+    font-family: var(--subtitle-small-font-family);
+    font-weight: var(--subtitle-small-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-small-font-size);
+    letter-spacing: var(--subtitle-small-letter-spacing);
+    line-height: var(--subtitle-small-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-small-font-style);
+}
+.frame .div-wrapper {
+    position: absolute;
+    width: 129px;
+    height: 25px;
+    top: -10px;
+    left: 13px;
+    background-color: #ffffff;
+}
+.frame .text-wrapper-7 {
+    position: absolute;
+    top: -3px;
+    left: 8px;
+    font-family: var(--subtitle-large-font-family);
+    font-weight: var(--subtitle-large-font-weight);
+    color: var(--lightgreen600-base);
+    font-size: var(--subtitle-large-font-size);
+    letter-spacing: var(--subtitle-large-letter-spacing);
+    line-height: var(--subtitle-large-line-height);
+    white-space: nowrap;
+    font-style: var(--subtitle-large-font-style);
+}
+.frame .div-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.frame .text-wrapper-8 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--body-large-font-family);
+    font-weight: var(--body-large-font-weight);
+    color: var(--lightneutral-700);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    line-height: var(--body-large-line-height);
+    font-style: var(--body-large-font-style);
+}
+
+</style>
+    </head>
+    <body>
+        <div class="frame">
+                <div class="div">
+                    <div class="text-wrapper" style = "font-size: 150%;">Bounce World</div><br>
+                    <p class = "p" style = "font-size: 100%; font-weight: bolder;">Create a captivating gaming experience 'Bounce World' with improved visuals and exciting challenges. Can you craft a path to victory amidst the obstacles?</p>
+                    <p class="p">
+                        Welcome, developers! Your mission is to enhance the current baseline of the “Bounce World” game, transforming it into a thrilling and interactive gaming experience. Building upon the existing HTML, CSS, and JavaScript code (starter kit) provided, bounce world is a game where there is one player and some steps, the player can either move in directions or can jump. Player should have to deal with enemies and hurdles.
+                    </p>
+                    <div class="text-wrapper">General requirements</div>
+                    <p class="p">
+                        Your solution must maintain the foundational structure of the starter kit, while bringing in functional upgrades and visually stimulating elements to improve the user experience.
+                    </p><br>
+                    <div class = "hide-on-editor-description" style="display: flex; flex-direction: column;  margin:0 auto ;">
+                        <img src="https://files.codingninjas.in/web-2-32181.webp" class="web-image" style=" margin:0 auto ;">
+                        <img src="https://files.codingninjas.in/mobile-2-32182.webp" class="mobile-image" style="margin:0 auto ;"/><br>
+                    </div>
+                    <div class="text-wrapper" style = "font-size: 130%;">Task for students</div><br>
+                    <div class = "div">
+                        <ul>
+                            <li class = "text-wrapper" style="margin-left: 1.5rem;">Game environment
+                                <ul><br>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Develop a vivid and dynamic backdrop using enchanting colors and visual elements to set the mood of the different levels in the game.</li>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Design platforms and obstacles strategically to provide a challenging yet achievable gameplay experience.</li>
+                                </ul>
+                            </li><br>
+                            <li class = "text-wrapper"  style="margin-left: 1.5rem;">Player character<br>
+                                <ul><br>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Enhance the player character design, ensuring smooth movement and transitions while jumping, running, and navigating through obstacles.</li>
+                                </ul>
+                            </li><br>
+                            <li class = "text-wrapper" style="margin-left: 1.5rem;">Obstacles
+                                <ul><br>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Introduce spikes and enemy patrols in the game, adding a layer of complexity and excitement.</li>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Ensure that collision with spikes and enemies triggers an end game scenario, encouraging players to navigate carefully.</li>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Design visually appealing and distinct graphics for the obstacles, players and enemies to differentiate them from other elements in the game.</li>
+                                </ul>
+                            </li><br>
+                            <li  class = "text-wrapper" style="margin-left: 1.5rem;">Game mechanics
+                                <ul><br>
+                                    <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">You should display the game inside the canvas.</li>
+                                    <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">The game has to  start when the 'Start Game' button is clicked.</li>
+                                    <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Player can only move left or right using arrow keys.</li>
+                                    <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Use the ‘space’ key to make the player jump.
+                                    </li>
+                                    <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">If a player comes in contact with spikes or ‘hurdles’, it should stop jumping. In the video, we have described spikes with ‘red’ colour.
+                                    </li>
+                                    <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">When a player collides with enemies, the game should end. In the video we have described the enemy from the moving  ‘black’ box.
+                                    </li>
+                                    <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">If a player falls off the screen, the game should be ended.</li>
+                                </ul>
+                            </li><br>
+                        </ul>  
+                    </div>
+                <div class="div">
+                    <div class="text-wrapper">
+                        <div class = "text-wrapper"> Must use the given structure - 
+                        <a href="https://ninjasfiles.s3.amazonaws.com/Code%20Structure%20Guidelines%20%28Bounce%20World%29-3652.pdf" target="_blank" style="color: #5780E9; text-decoration: underline;" onmouseover="this.style.color='#425996';" onmouseout="this.style.color='#5780E9';">Code structure guidelines</a></div></div><br>
+                    <div class = "text-wrapper">Bonus features
+                        <ul><br>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Add creative animations to depict different states of the player character, such as running, jumping, and collision reactions.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Implement transition animations for changing levels and during the end game scenario to enhance the visual appeal.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Create a patrolling enemy with AI behavior, changing direction upon hitting the canvas edges to add unpredictability in the enemy movement.</li>
+                        </ul>
+                    </div><br>
+                    <div class = "text-wrapper">UI reference & demo
+                        <ul><br>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Use the given starter kit to design the bounce world interface, aiming to mirror the UI created using starter kit while also adding your innovative touches.
+                            </li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Watch the demo video which will help in designing the project in recommended way - <a href = "https://files.codingninjas.in/bounce-world-30356-32023.mkv" target="_blank" style="color: #5780E9; text-decoration: underline;" onmouseover="this.style.color='#425996';" onmouseout="this.style.color='#5780E9';">demo video</a></li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Refer to various design inspirations online to bring a fresh and modern look to the application.
+                            </li>
+                        </ul>
+                    </div><br>
+                    <div class = "text-wrapper">Note
+                        <ul><br>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Regularly test your application to ensure all functionalities are working seamlessly and to maintain alignment with the core requirements.</li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Leverage the canvas element to its fullest to create a visually rich gaming environment.
+                            </li>
+                        </ul>
+                    </div><br>
+                    <div class = "text-wrapper">Evaluation
+                        <ul><br>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">After submission, your project will be evaluated automatically based on tasks defined above.</li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Upon successful completion of all the tasks/requirements, you will get a full score, otherwise you will get a partial score based on the tasks completed successfully. </li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">You can work on your failed test cases & resubmit the project.</li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">Your project evaluation may take a few minutes to get evaluated after submission.</li>
+                            <li class = "p"  style = "margin-left: 3rem; list-style-type: disc;">After completing certain projects, you will be rewarded with badges for defined competencies.</li>
+                        </ul>
+                    </div><br>
+<div class = "text-wrapper">Do’s & don’t
+                        <ul><br>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">You must start the project by first downloading the starter kit attached to this project & make changes in those files only. You should not start creating your own files.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Use the given starter kit and do not make any changes in the package.json and the already provided versions of the dependencies.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Delete your package.lock.json and node modules before submitting the zip of the project.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Project folder name should not contain characters like +, (, / etc.</li>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">Project must be in a root folder which must be zipped and then submitted for evaluation.</li>
+                        </ul>
+                    </div><br>
+                    <div class = "text-wrapper">Query & feedback
+                        <ul><br>
+                            <li class = "p" style = "margin-left: 3rem; list-style-type: disc;">In case of any query/feedback on this project, please fill this <a href = "https://docs.google.com/forms/d/e/1FAIpQLSd9DxPdsdYFUoZ91Bc_XdovskD7IfCVbWNR_XK9wyR0ZIY-YA/viewform" target="_blank" style="color: #5780E9; text-decoration: underline;" onmouseover="this.style.color='#425996';" onmouseout="this.style.color='#5780E9';">form</a> & we will soon get in touch with you to resolve.</li>
+                        </ul>
+                    </div><br>
+                    <p class = "p" style = "font-size: 100%; font-weight: bolder;">Best of luck, developers! We are eager to see your bounce world game!</p>
